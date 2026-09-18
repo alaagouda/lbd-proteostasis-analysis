@@ -1,10 +1,7 @@
 """
 Shared helpers for the LBD proteostasis pipeline.
 
-Column names differ slightly between the three cohorts (Jin, Ma, Nido)
-depending on which annotation pass produced each h5ad, so most of this
-is defensive lookups rather than hardcoded strings. If a lookup fails,
-check adata.obs.columns directly before assuming the data is wrong.
+
 """
 
 import numpy as np
