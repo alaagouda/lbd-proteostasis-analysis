@@ -1,0 +1,13 @@
+__pycache__/
+*.pyc
+*.pyo
+.ipynb_checkpoints/
+drive_token.json
+*.h5ad
+results/
+data_snrna/
+.DS_Store
+*.png
+*.pdf
+*.csv
+*.tiff
