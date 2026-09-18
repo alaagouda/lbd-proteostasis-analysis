@@ -11,11 +11,6 @@ this matters mainly for TF activity, since fitting hundreds of regulon
 models per cell type across all three cohorts is slow enough that
 losing partial progress to a crash or timeout is expensive.
 
-TF activity in particular runs per cell type rather than on a whole
-cohort's matrix in one call, since fitting several hundred regulon
-models against ~280,000 cells at once is a large enough memory spike to
-be worth avoiding on a modest machine.
-
 Usage:
     python 01_main_pipeline.py \\
         --jin path/to/jin.h5ad --ma path/to/ma.h5ad --nido path/to/nido.h5ad \\
