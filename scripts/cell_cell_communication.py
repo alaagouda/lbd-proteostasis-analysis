@@ -1,15 +1,4 @@
 """
-Ligand-receptor interaction analysis with LIANA+'s consensus
-rank_aggregate method, run per sample. Reports the share of
-significant pairs attributed to NLGN1-NRXN synaptic signalling versus
-TNF-TNFR inflammatory signalling.
-
-This is a compositional measure of relative signalling balance, not
-absolute pathway activation - see hallmarks_gsea.py for the latter.
-The two aren't directly comparable and shouldn't be read as
-confirming or contradicting each other without that distinction in
-mind.
-
 Usage:
     python cell_cell_communication.py --input data/GSE253462_annotated.h5ad \
         --cohort Ma --outdir results/ma_liana
