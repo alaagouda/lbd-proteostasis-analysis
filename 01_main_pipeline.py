@@ -1,4 +1,3 @@
-# NOTE (2026-10): the NLGN1:TNF balance described here is no longer reported; see CHANGELOG.md.
 """
 Gouda et al. 2026 - revision analysis, checkpointed and resumable.
 
