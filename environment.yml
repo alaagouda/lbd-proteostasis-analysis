@@ -1,5 +1,3 @@
-# The versions the test suite (see the count in CHANGELOG) and the verification scripts were run against, 5 October 2026.
-# decoupler must be 2.x for revision/verify_secondary_claims.py and scripts/01_main_pipeline.py; scripts/tf_activity.py needs the 1.x calls (see README.md, Environment).
 name: lbd-proteostasis
 channels:
   - conda-forge
@@ -21,9 +19,8 @@ dependencies:
       - pydeseq2==0.5.4
       - gseapy==1.3.1
       - decoupler==2.2.0
+      - liana
+      - pertpy==1.0.3
       - openpyxl==3.1.5
-      - pdfplumber==0.11.9
       - google-api-python-client==2.201.0
       - google-auth==2.59.1
-      - pyyaml==6.0.3
-      - pytest==9.1.1

@@ -1,5 +1,5 @@
 """
-Combines per-cohort Z-scores for the seven pre-specified heat shock
+Combines per-cohort Z-scores for the seven primary heat shock
 genes into a single weighted estimate (Stouffer's method, weighted by
 sqrt(n)). Expects the *_proteostasis_by_celltype.csv files produced by
 pseudobulk_de.py for each cohort - averages Z across cell types within

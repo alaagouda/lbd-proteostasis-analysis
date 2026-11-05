@@ -1,7 +1,7 @@
 """
 Tests GO:0006986 (response to unfolded protein) as a pre-ranked
 enrichment against a cohort-level ranked gene list. This was
-pre-specified as a primary outcome and needs to be run the same way
+designated a primary outcome and needs to be run the same way
 for all three cohorts - it is not the same gene set as the MSigDB
 Hallmark "Unfolded Protein Response" collection used in
 hallmarks_gsea.py, and the two shouldn't be reported interchangeably.

@@ -1,3 +1,4 @@
+# NOTE (2026-10): the NLGN1:TNF balance described here is no longer reported; see CHANGELOG.md.
 """
 Gouda et al. 2026 - revision analysis, checkpointed and resumable.
 
@@ -17,7 +18,7 @@ models against ~280,000 cells at once is a large enough memory spike to
 be worth avoiding on a modest machine.
 
 Usage:
-    python 01_main_pipeline.py \\
+    python main_pipeline.py \\
         --jin path/to/jin.h5ad --ma path/to/ma.h5ad --nido path/to/nido.h5ad \\
         --checkpoint-dir results/revision_2026
 """
@@ -358,7 +359,7 @@ def run_tf_activity_by_celltype(adata, cfg, cohort_name, tfs_of_interest=("ATF4"
 
     if not hasattr(dc, "mt"):
         raise SystemExit(
-            "scripts/01_main_pipeline.py uses the decoupler 2.x calls (dc.op.collectri, dc.mt.ulm): install decoupler>=2.0 (see environment.yml)."
+            "scripts/main_pipeline.py uses the decoupler 2.x calls (dc.op.collectri, dc.mt.ulm): install decoupler>=2.0 (see environment.yml)."
         )
 
     ct_col, dx_col = cfg["cell_type_col"], cfg["dx_col"]

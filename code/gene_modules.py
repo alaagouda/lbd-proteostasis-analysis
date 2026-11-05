@@ -22,7 +22,7 @@ PROTEOSTASIS = [
     "HSPH1",
 ]
 
-# Subset pre-specified for pseudobulk DE and Stouffer meta-analysis
+# Subset designated primary for pseudobulk DE and Stouffer meta-analysis
 # (documented stress-inducibility, detected above threshold in all
 # three cohorts)
 HEAT_SHOCK_PRIMARY = [
